@@ -1,0 +1,12 @@
+/*style scss*/
+
+$text-button-color: #FF0000;
+$text-button-hover: #00FF00;
+
+button{
+    color : $text-button-color;
+    &:hover{
+        color : $text-button-hover;
+ 
+    }
+}
