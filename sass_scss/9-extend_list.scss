@@ -1,16 +1,14 @@
 /*style scss*/
-$text-color: #00FF00;
-$text-color2: #FF0000;
-
-.info{
+.info {
     font-size: 12px;
-}
-.succes{
-    color: $text-color;
+  }
+  
+  .success {
     @extend .info;
-}
-
-.warning{
-    color: $text-color2;
+    color: #00FF00;
+  }
+  
+  .warning {
     @extend .info;
-}
+    color: #FF0000;
+  }
