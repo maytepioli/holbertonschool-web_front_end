@@ -1,15 +1,17 @@
 /*style scss*/
+
 $text-color: #3D3D3D;
 $background-color: #6D6D6D;
 
 body {
-    $text-color: #3D3D3D;
-    $backgroundo-color: #6D6D6D;
+  color: $text-color;
+  background-color: $background-color;
 }
 
 p {
-    $text-color: #3D3D3D;
+  color: $text-color;
 }
+
 h2 {
-    $backgroundo-color: #6D6D6D;
+  background-color: $background-color;
 }
