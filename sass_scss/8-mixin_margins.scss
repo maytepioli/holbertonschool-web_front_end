@@ -1,0 +1,12 @@
+/*style scss*/
+@mixin set-horizontal-margin($mezcla) {
+    margin-left: $mezcla;
+    margin-right: $mezcla;
+}
+body{
+    @include set-horizontal-margin(10px);
+}
+
+div{
+    @include set-horizontal-margin(15px);
+}
