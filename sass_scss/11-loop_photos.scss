@@ -1,5 +1,5 @@
 /*style scss*/
-@use '11-photos.scss';
+@use '11-photos.scss' as photos;
 
 @each $name in $list-names{
     .photo-#{$name}{
