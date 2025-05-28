@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Holberton - Web Stack - Bootstrap</title>
+  <meta name="description" content="Bootstrap is a free and open-source CSS framework">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+    .container-custom {
+      max-width: 960px;
+      margin: auto;
+      background-color: #f8f9fa;
+      color: #000;
+      padding: 1rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    h1 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .tab-content {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    .album-list .card {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-custom">
+    <h1>Bob Dylan</h1>
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="intro-tab" data-toggle="tab" href="#introduction" role="tab">Introduction</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="disco-tab" data-toggle="tab" href="#discography" role="tab">Discography</a>
+      </li>
+    </ul>
+
+    <div class="tab-content mt-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="introduction" role="tabpanel">
+        <p>
+          Bob Dylan (born Robert Allen Zimmerman; May 24, 1941) is an American singer-songwriter, author, and visual artist who has been a major figure in popular culture for more than fifty years.
+        </p>
+        <p>
+          Much of his most celebrated work dates from the 1960s, when songs such as "Blowin' in the Wind" (1963) and "The Times They Are a-Changin'" (1964) became anthems for the civil rights movement and anti-war movement.
+        </p>
+      </div>
+
+      <div class="tab-pane fade" id="discography" role="tabpanel">
+        <div class="album-list">
+          <div class="card">
+            <div class="card-header">
+              <a data-toggle="collapse" href="#album1">Bob Dylan <em>(1962)</em></a>
+            </div>
+            <div id="album1" class="collapse">
+              <div class="card-body">
+                Bob Dylan is the debut studio album... features folk standards, plus two original compositions, "Talkin' New York" and "Song to Woody".
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a data-toggle="collapse" href="#album2">The Freewheelin' Bob Dylan <em>(1963)</em></a>
+            </div>
+            <div id="album2" class="collapse">
+              <div class="card-body">
+                The Freewheelin' Bob Dylan... includes "Blowin' in the Wind", "Girl from the North Country", and others.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a data-toggle="collapse" href="#album3">The Times They Are a-Changin' <em>(1964)</em></a>
+            </div>
+            <div id="album3" class="collapse">
+              <div class="card-body">
+                The Times They Are a-Changin'... the title track is one of Dylan’s most famous.
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <a data-toggle="collapse" href="#album4">Another Side of Bob Dylan <em>(1964)</em></a>
+            </div>
+            <div id="album4" class="collapse">
+              <div class="card-body">
+                Another Side of Bob Dylan... released on August 8, 1964 by Columbia Records.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
